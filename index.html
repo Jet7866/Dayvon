@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Day in the Life of a College Student</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Day in the Life of a College Student</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#daily-routine">Daily Routine</a></li>
+                <li><a href="#stories">Featured Stories</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Experience a Day in the Life of a College Student</h2>
+            <p>Follow the journey from morning lectures to late-night study sessions.</p>
+            <a href="#daily-routine" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <section id="daily-routine" class="timeline">
+        <h2>Daily Routine</h2>
+        <div class="timeline-container">
+            <div class="timeline-item">
+                <div class="time">8:00 AM</div>
+                <div class="content">Morning classes and lectures</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">12:00 PM</div>
+                <div class="content">Lunch break with friends</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">3:00 PM</div>
+                <div class="content">Library study session</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">7:00 PM</div>
+                <div class="content">Club activities or gym</div>
+            </div>
+            <div class="timeline-item">
+                <div class="time">10:00 PM</div>
+                <div class="content">Late-night study and assignments</div>
+            </div>
+        </div>
+    </section>
+
+<section id="stories" class="featured-stories">
+    <h2>Featured Stories</h2>
+    <div class="stories-container">
+        <div class="story-card">
+            <h3>Balancing Social-life and Study</h3>
+            <p>Discover how students manage their social life while excelling in academics.</p>
+            <a href="balance.html" class="read-more">Read More</a>
+        </div>
+        <div class="story-card">
+            <h3>A Day in the Life of a Business Student</h3>
+            <p>See how business students balance studies and networking.</p>
+            <a href="business.html" class="read-more">Read More</a>
+        </div>
+        <div class="story-card">
+            <h3>Surviving Finals Week</h3>
+            <p>Tips and tricks to handle the stress of exams.</p>
+            <a href="finals.html" class="read-more">Read More</a>
+        </div>
+    </div>
+</section>
+
+<section id="student-vlog" class="vlog-section">
+    <h2>Student Vlog & Testimonial</h2>
+    <p>Watch a real experience from a student about their college journey.</p>
+
+    <div class="vlog-container">
+        <div class="vlog">
+            <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/RFU7n_YuLKI?si=-prULePeNdjLUoW9" 
+                title="Student Vlog" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            <p>Meet William, a Business student sharing their daily routine.</p>
+        </div>
+    </div>
+</section>
+
+<section id="college-life" class="college-life-section">
+    <h2>College Life in Pictures</h2>
+    <p>Explore moments captured by students from their daily college experience.</p>
+
+    <!-- Grid Layout for Images -->
+    <div class="image-grid">
+        <img src="img1.jpeg" alt="Students in the library">
+        <img src="img2.jpeg" alt="Campus view">
+        <img src="img3.jpeg" alt="Sports event">
+        <img src="img4.jpeg" alt="Group study session">
+        <img src="img5.jpeg" alt="Cafeteria hangout">
+        <img src="img6.jpeg" alt="Graduation ceremony">
+    </div>
+
+</section>
+
+<section id="student-profile" class="student-profile-section">
+    <h2>Meet William Ng 🎓</h2>
+    <p>Follow a day in the life of a fun-loving Statistics student!</p>
+
+    <div class="profile-card">
+        <img src="black.jpg" alt="William Ong" class="profile-pic">
+        <h3>William Ng 🚀</h3>
+        <p>Business student by day, badminton player by night! Loves static analysis, coffee, and crunching numbers!</p>
+        
+    </div>
+</section>
+
+
+<section id="share-experience" class="experience-section">
+    <div class="experience-container">
+        <h2>Share Your College Experience</h2>
+        <p>We’d love to hear your story! Share your college experiences and inspire others.</p>
+
+        <!-- Experience Submission Form -->
+        <form class="experience-form">
+            <label for="experience-name">Name:</label>
+            <input type="text" id="experience-name" name="name" placeholder="Your Name" required>
+
+            <label for="experience-email">Email:</label>
+            <input type="email" id="experience-email" name="email" placeholder="Your Email" required>
+
+            <label for="experience-text">Your Story:</label>
+            <textarea id="experience-text" name="story" rows="5" placeholder="Write your experience..." required></textarea>
+
+            <button type="submit" class="btn">Submit Your Story</button>
+        </form>
+    </div>
+</section>
+
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Have questions or feedback? Reach out to us!</p>
+
+        <!-- Contact Form -->
+        <form class="contact-form">
+            <label for="contact-name">Name:</label>
+            <input type="text" id="contact-name" name="name" placeholder="Your Name" required>
+
+            <label for="contact-email">Email:</label>
+            <input type="email" id="contact-email" name="email" placeholder="Your Email" required>
+
+            <label for="contact-message">Message:</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Your Message..." required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<footer class="footer">
+    <p>&copy; 2025 A Day in the Life. All rights reserved.</p>
+    <p>Follow us on <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+</footer>
+
+</body>
+</html>
