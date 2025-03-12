@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header and Navigation */
+header, footer {
+    background: linear-gradient(90deg, #ff5733, #ffbd33);
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    background: url('college-campus.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    color: white;
+}
+
+/* Dark overlay to improve text contrast */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+/* Hero content */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 80%;
+}
+
+/* Hero heading */
+.hero-content h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3); /* Text shadow for readability */
+}
+
+/* Hero paragraph */
+.hero-content p {
+    font-size: 1.3em;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+/* Button styling */
+.hero .btn {
+    background: #ff5733;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background 0.3s ease-in-out;
+}
+
+.hero .btn:hover {
+    background: #e63946;
+}
+
+/* Daily Routine Section */
+.timeline {
+    background: linear-gradient(135deg, #74ebd5, #acb6e5); /* Vibrant gradient */
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff; /* Ensures text is readable */
+}
+
+/* Timeline container */
+.timeline-container {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Individual timeline items */
+.timeline-item {
+    background: rgba(255, 255, 255, 0.9); /* Light background for better readability */
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #333; /* Dark text for readability */
+    font-size: 1.1em;
+}
+
+/* Time inside each item */
+.timeline-item .time {
+    font-weight: bold;
+    color: #ff5733; /* Highlighted time */
+    font-size: 1.2em;
+}
+
+/* Ensure the section has a colorful background */
+.featured-stories {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Gradient background */
+    padding: 50px 20px;
+    text-align: center;
+    color: #fff; /* Make text visible on the background */
+}
+
+/* Container for the story cards */
+.stories-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual story cards */
+.story-card {
+    background: linear-gradient(135deg, #ffdde1, #ee9ca7); /* Soft gradient background */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    width: 320px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Depth effect */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 280px;
+    border-left: 5px solid #ff5733; /* Accent color */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    color: #333; /* Ensure text is readable */
+}
+
+/* Ensure the background color is not overridden */
+.story-card p, 
+.story-card h3 {
+    background: transparent;
+    color: #333; /* Text remains visible */
+}
+
+/* Hover effect */
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Read More button */
+.read-more {
+    display: inline-block; /* Ensures the button takes only necessary space */
+    margin: 15px auto 0; /* Centers horizontally */
+    color: #ffffff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+    text-align: center;
+    font-size: 1em;
+    background: #ff5733;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Hover effect */
+.read-more:hover {
+    background: #e63946;
+}
+
+/* Student Vlog Section */
+.vlog-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #34495e;  /* Dark Blue Background */
+    color: white;
+}
+
+.vlog-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.vlog-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Vlog Container */
+.vlog-container {
+    text-align: center;
+}
+
+}
+
+/* Individual Vlog Box */
+.vlog {
+    background: rgba(255, 255, 255, 0.2); /* Slight transparency */
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Video Styling */
+.vlog video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Vlog Description */
+.vlog p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+
+/* College Life Section */
+.college-life-section {
+    text-align: center;
+    padding: 50px 20px;
+    background: #2ecc71; /* Green Background */
+    color: white;
+}
+
+/* Title & Paragraph */
+.college-life-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.college-life-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Grid Layout for Images */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.image-grid img {
+    width: 100%;
+	max-height : 200px;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+img {
+	width: 200px;
+	height: 150px;
+}
+
+/* Call to Action */
+.cta {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.cta h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.cta .btn {
+    background: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Fun & Colorful Student Profile */
+.student-profile-section {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4, #fbc2eb);
+    color: #fff;
+}
+
+.student-profile-section h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.student-profile-section p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.profile-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 380px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 5px solid #ff6b81;
+}
+
+.profile-card:hover {
+    transform: scale(1.05) rotate(2deg);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+}
+
+.profile-pic {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 6px solid #ff6b81;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover .profile-pic {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+.profile-card h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ff6b81;
+    margin-bottom: 10px;
+}
+
+.profile-card p {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(90deg, #ff6b81, #ff4757);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #ff4757, #ff6b81);
+    transform: scale(1.1);
+}
+
+/* Share Your College Experience Section */
+.experience-section {
+    background: #3498db; /* Blue Background */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Centering the Form */
+.experience-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Experience Form Styling */
+.experience-form {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent White */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.experience-form label {
+    font-size: 1rem;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.experience-form input,
+.experience-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.experience-form textarea {
+    resize: none;
+}
+
+.experience-form .btn {
+    background: #e74c3c; /* Red Button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Contact Us Section */
+.contact-section {
+    background: #2ecc71; /* Green Background */
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Container to center the form */
+.contact-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent White */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 1rem;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form .btn {
+    background: #e74c3c; /* Red Button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.footer a {
+    color: #e67e22;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
